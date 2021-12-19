@@ -13,6 +13,6 @@ Would you like to encode/decode another message? (y/n): a<br>
 Would you like to encode/decode another message? (y/n): y<br>
 Would you like to encode (e) or decode (d): e<br>
 What message would you like to encode: Hello WORld<br>
-.... . .-.. .-.. --- .-- --- .-. .-.. -..
+.... . .-.. .-.. --- .-- --- .-. .-.. -..<BR>
 Would you like to encode/decode another message? (y/n): n<br>
 Thanks for using the program, goodbye!
