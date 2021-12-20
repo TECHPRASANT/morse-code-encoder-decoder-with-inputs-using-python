@@ -78,12 +78,12 @@ def encode(message):
 # This function is used to decrypt
 # Morse code to English
 def decode(message):
-    decipher = ' '
+    decipher = ''
     codetext = ''
     for code in message:
         # checking for space
         if (code != ' '):
-            # to track spaces
+            # to track spacesy
             a = 0
             # for storing morse code of a single character
             codetext += code
@@ -100,6 +100,7 @@ def decode(message):
                 decipher += list(dictionary.keys())[list(dictionary.values()).index(codetext)]
                 codetext = ''
     return decipher
+    
 #main funtion
 def main():
     print_intro() #this funtion executes in first
@@ -110,4 +111,3 @@ def main():
 #program begins from here
 if __name__ == '__main__':
     main() #executes main funtion
-    
