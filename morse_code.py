@@ -1,7 +1,4 @@
-# Coding Challenge 2
-# Name:
-# Student No:
-
+# Name: Prashant Bhandari
 #A morse code encoder/decoder
 
 # A Morse code in tuple
@@ -48,8 +45,8 @@ def get_continue():
         get_input() 
         get_continue()
         break
-    if another=='y' or another!='y' and another!='n':
-        #if user type y get continue funtion runs. or if user type others letter(not y and n) again get continue funtion runs.
+    if another=='y' or another!='n':
+        #if user type y and type others letter(not n) again get continue function runs.
         get_continue()   
     if another=='n':
         #program ends when user type n
