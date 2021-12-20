@@ -2,7 +2,8 @@
 ## Overview
 Morse code is a character encoding scheme used in telecommunications. It is named after the inventor of the telegraph Samuel Morse and represents textual characters as combinations of long (dashes) and short (dots) electronic pulses, lights or sounds. <p>For example, the letter J is coded as .---, ! as -.-.-- and 1 as .−−−− A single space is used to separate characters within a word and 3 spaces between words. Morse is case-insensitive, so capital letters are used as a matter of course.</p> <p>For example, the message HELLO WORLD in Morse code is: .... . .-.. .-.. --- .-- --- .-. .-.. -..</p> In addition to letters, digits and punctuation, there are some special service codes, the most notorious of which is the international distress signal SOS, coded as ...−−−... These special codes are treated as single characters, but transmitted as separate words.#
 ## Program code:
-```python# Coding Challenge 2
+```python
+# Coding Challenge 2
 # Name:
 # Student No:
 
@@ -52,7 +53,8 @@ def get_continue():
         get_input() 
         get_continue()
         break
-    if another=='y' or another!='y':
+    if another=='y' or another!='y' and another!='n':
+        #if user type y get continue funtion runs. or if user type others letter(not y and n) again get continue funtion runs.
         get_continue()   
     if another=='n':
         #program ends when user type n
