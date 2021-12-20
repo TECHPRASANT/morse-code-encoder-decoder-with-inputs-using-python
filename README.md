@@ -51,7 +51,7 @@ def get_continue():
         get_continue()
         break
     if another=='y' or another!='n':
-        #if user type y and type others letter(not n) again get continue function runs.
+        #if user type y or type others letter(not n) again get_continue function runs.
         get_continue()   
     if another=='n':
         #program ends when user type n
