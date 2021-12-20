@@ -54,6 +54,7 @@ def get_continue():
     if another=='n':
         #program ends when user type n
         print("Thanks for using the program, goodbye!")
+        quit() #program ends
 
 # This function is used to encrypt
 # English to  morse code                     
@@ -76,29 +77,39 @@ def encode(message):
 
 
 # This function is used to decrypt
-# Morse code to English
+# Morse code to Englishdef decrypt(message):
 def decode(message):
+    message += ' '
     decipher = ''
-    codetext = ''
-    for code in message:
-        # checking for space
-        if (code != ' '):
-            # to track spacesy
-            a = 0
-            # for storing morse code of a single character
-            codetext += code
-        # for space
+    code_text = ''
+    for letter in message:
+ 
+        # checks for space
+        if (letter != ' '):
+ 
+            # counter to keep track of space
+            i = 0
+ 
+            # storing morse code of a single character
+            code_text += letter
+ 
+        # in case of space
         else:
-            # if a = 1 signifies a new character
-            a += 1
-            # if a = 2 signifies a new word
-            if a == 2:
-                # adding space to separate words
+            # if i = 1 that indicates a new character
+            i += 1
+ 
+            # if i = 2 that indicates a new word
+            if i == 2 :
+ 
+                 # adding space to separate words
                 decipher += ' '
             else:
-                # to access the keys using value
-                decipher += list(dictionary.keys())[list(dictionary.values()).index(codetext)]
-                codetext = ''
+ 
+                # accessing the keys using their values (reverse of encryption)
+                decipher += list(dictionary.keys())[list(dictionary
+                .values()).index(code_text)]
+                code_text = ''
+ 
     return decipher
     
 #main funtion
